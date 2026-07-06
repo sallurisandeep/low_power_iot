@@ -1,0 +1,24 @@
+Sun Mar 22 16:27:02 UTC 2026 - Executing "openroad -exit -no_init -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/layers.list /home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+
+Sun Mar 22 16:27:02 UTC 2026 - Executing "/openlane/scripts/mergeLef.py -o /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/merged.nom.lef -i /home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null"
+
+Sun Mar 22 16:27:03 UTC 2026 - Executing "/openlane/scripts/mergeLef.py -o /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/merged.min.lef -i /home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null"
+
+Sun Mar 22 16:27:03 UTC 2026 - Executing "/openlane/scripts/mergeLef.py -o /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/merged.max.lef -i /home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null"
+
+Sun Mar 22 16:27:03 UTC 2026 - Executing "python3 /openlane/scripts/mergeLib.py --output /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/synthesis/merged.lib --name sky130A_merged /home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Sun Mar 22 16:27:03 UTC 2026 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/synthesis/trimmed.lib.exclude.list --output /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/synthesis/trimmed.lib /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/synthesis/merged.lib"
+
+Sun Mar 22 16:27:03 UTC 2026 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/cts/cts.lib.exclude.list --output /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/cts/cts.lib /home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Sun Mar 22 16:27:03 UTC 2026 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/cts/cts-fastest.lib.exclude.list --output /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/cts/cts-fastest.lib /home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
+
+Sun Mar 22 16:27:03 UTC 2026 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/cts/cts-slowest.lib.exclude.list --output /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/cts/cts-slowest.lib /home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
+
+Sun Mar 22 16:27:04 UTC 2026 - Executing "python3 /openlane/scripts/new_tracks.py -i /home/sandeep/.ciel/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/tmp/routing/config.tracks"
+
+Sun Mar 22 16:27:04 UTC 2026 - Executing "echo {OpenLane ff5509f65b17bfa4068d5336495ab1718987ff69} > /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/OPENLANE_COMMIT"
+
+Sun Mar 22 16:27:04 UTC 2026 - Executing "bash -c {verilator  --lint-only  -Wall  --Wno-DECLFILENAME  --top-module iot_core_top  /home/sandeep/low_power_iot/rtl/alu.v /home/sandeep/low_power_iot/rtl/clock_gating_unit.v /home/sandeep/low_power_iot/rtl/instruction_decoder.v /home/sandeep/low_power_iot/rtl/instruction_memory.v /home/sandeep/low_power_iot/rtl/program_counter.v /home/sandeep/low_power_iot/rtl/register_file.v /home/sandeep/low_power_iot/rtl/iot_core_top.v -Wno-fatal --relative-includes |& tee /home/sandeep/low_power_iot/runs/RUN_2026.03.22_16.27.02/logs/synthesis/linter.log /dev/null}"
+

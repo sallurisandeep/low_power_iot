@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 60000 60000
+string GDS_END 1484124
+string GDS_FILE /home/sandeep/low_power_iot/runs/RUN_2026.03.24_04.16.56/results/signoff/iot_core_top.magic.gds
+string GDS_START 302170
+<< end >>

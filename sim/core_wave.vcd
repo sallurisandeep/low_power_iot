@@ -1,0 +1,343 @@
+$date
+	Tue Mar 24 11:26:28 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module iot_core_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst_n $end
+$var reg 1 # wake_up $end
+$scope module u_core $end
+$var wire 1 $ active_sleep $end
+$var wire 1 ! clk $end
+$var wire 16 % current_pc [15:0] $end
+$var wire 1 & is_sleeping $end
+$var wire 1 ' reg_active $end
+$var wire 1 " rst_n $end
+$var wire 1 # wake_up $end
+$var wire 4 ( src_reg [3:0] $end
+$var wire 1 ) sleep_en $end
+$var wire 1 * reg_write $end
+$var wire 16 + reg_val_b [15:0] $end
+$var wire 16 , reg_val_a [15:0] $end
+$var wire 16 - pc_addr [15:0] $end
+$var wire 4 . opcode [3:0] $end
+$var wire 16 / instruction [15:0] $end
+$var wire 4 0 dest_reg [3:0] $end
+$var wire 1 1 clk_reg $end
+$var wire 1 2 clk_alu $end
+$var wire 1 3 alu_zero $end
+$var wire 16 4 alu_result [15:0] $end
+$var wire 1 5 alu_en $end
+$scope module u_alu $end
+$var wire 1 3 zero_flag $end
+$var wire 16 6 operand_b [15:0] $end
+$var wire 16 7 operand_a [15:0] $end
+$var wire 4 8 opcode [3:0] $end
+$var wire 16 9 iso_b [15:0] $end
+$var wire 16 : iso_a [15:0] $end
+$var wire 1 5 alu_en $end
+$var reg 16 ; alu_result [15:0] $end
+$upscope $end
+$scope module u_cg_alu $end
+$var wire 1 ! clk_in $end
+$var wire 1 2 clk_out $end
+$var wire 1 5 enable $end
+$var reg 1 < latch_en $end
+$upscope $end
+$scope module u_cg_reg $end
+$var wire 1 ! clk_in $end
+$var wire 1 1 clk_out $end
+$var wire 1 ' enable $end
+$var reg 1 = latch_en $end
+$upscope $end
+$scope module u_decoder $end
+$var wire 16 > instruction [15:0] $end
+$var reg 1 5 alu_en $end
+$var reg 4 ? dest_reg [3:0] $end
+$var reg 1 * mem_write $end
+$var reg 4 @ opcode [3:0] $end
+$var reg 1 ) sleep_en $end
+$var reg 4 A src_reg [3:0] $end
+$upscope $end
+$scope module u_imem $end
+$var wire 16 B pc_addr [15:0] $end
+$var reg 16 C instruction [15:0] $end
+$upscope $end
+$scope module u_pc $end
+$var wire 1 ! clk $end
+$var wire 16 D pc_in [15:0] $end
+$var wire 1 E pc_load $end
+$var wire 1 " rst_n $end
+$var wire 1 $ sleep_en $end
+$var reg 16 F pc_out [15:0] $end
+$upscope $end
+$scope module u_regfile $end
+$var wire 1 1 clk $end
+$var wire 4 G read_addr_a [3:0] $end
+$var wire 4 H read_addr_b [3:0] $end
+$var wire 16 I read_data_a [15:0] $end
+$var wire 16 J read_data_b [15:0] $end
+$var wire 1 " rst_n $end
+$var wire 4 K write_addr [3:0] $end
+$var wire 16 L write_data [15:0] $end
+$var wire 1 * write_en $end
+$var integer 32 M i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10000 M
+b0 L
+b0 K
+b0 J
+b0 I
+b0 H
+b0 G
+b0 F
+0E
+b0 D
+b1000000000001 C
+b0 B
+b0 A
+b1 @
+b0 ?
+b1000000000001 >
+0=
+0<
+b0 ;
+b0 :
+b0 9
+b1 8
+b0 7
+b0 6
+05
+b0 4
+13
+02
+01
+b0 0
+b1000000000001 /
+b1 .
+b0 -
+b0 ,
+b0 +
+0*
+0)
+b0 (
+0'
+0&
+b0 %
+0$
+0#
+0"
+0!
+$end
+#5000
+1!
+#10000
+0!
+#15000
+b10 (
+b10 A
+b10 G
+b10 .
+b10 8
+b10 @
+b10000000100101 /
+b10000000100101 >
+b10000000100101 C
+b1 %
+b1 -
+b1 B
+b1 F
+1!
+1"
+#20000
+0!
+#25000
+1'
+15
+b101 (
+b101 A
+b101 G
+b11 .
+b11 8
+b11 @
+b11000001010000 /
+b11000001010000 >
+b11000001010000 C
+b10 %
+b10 -
+b10 B
+b10 F
+1!
+#30000
+1<
+1=
+0!
+#35000
+1*
+b0 (
+b0 A
+b0 G
+b100 .
+b100 8
+b100 @
+05
+b100000000000000 /
+b100000000000000 >
+b100000000000000 C
+b11 %
+b11 -
+b11 B
+b11 F
+12
+11
+1!
+#40000
+0<
+02
+01
+0!
+#45000
+1$
+0'
+1&
+1)
+b1111 (
+b1111 A
+b1111 G
+b1111 0
+b1111 ?
+b1111 K
+b1111 .
+b1111 8
+b1111 @
+0*
+b1111111111111111 /
+b1111111111111111 >
+b1111111111111111 C
+b100 %
+b100 -
+b100 B
+b100 F
+11
+1!
+#50000
+0=
+01
+0!
+#55000
+1!
+#60000
+0!
+#65000
+1!
+#70000
+0!
+#75000
+1!
+#80000
+0!
+#85000
+1!
+#90000
+0!
+#95000
+1!
+#100000
+0!
+#105000
+1!
+#110000
+0!
+#115000
+0$
+1!
+1#
+#120000
+0!
+#125000
+b0 (
+b0 A
+b0 G
+b0 0
+b0 ?
+b0 K
+b0 .
+b0 8
+b0 @
+0&
+0)
+b0 /
+b0 >
+b0 C
+b101 %
+b101 -
+b101 B
+b101 F
+0$
+1!
+0#
+#130000
+0!
+#135000
+bx ,
+bx 7
+bx I
+bx (
+bx A
+bx G
+bx 0
+bx ?
+bx K
+bx .
+bx 8
+bx @
+bx /
+bx >
+bx C
+b110 %
+b110 -
+b110 B
+b110 F
+1!
+#140000
+0!
+#145000
+b111 %
+b111 -
+b111 B
+b111 F
+1!
+#150000
+0!
+#155000
+b1000 %
+b1000 -
+b1000 B
+b1000 F
+1!
+#160000
+0!
+#165000
+b1001 %
+b1001 -
+b1001 B
+b1001 F
+1!
+#170000
+0!
+#175000
+b1010 %
+b1010 -
+b1010 B
+b1010 F
+1!

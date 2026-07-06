@@ -1,0 +1,140 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1774325868
+<< obsli1 >>
+rect 1104 2159 58880 57681
+<< obsm1 >>
+rect 14 2128 59970 57712
+<< metal2 >>
+rect 1306 59200 1362 60000
+rect 12898 59200 12954 60000
+rect 25134 59200 25190 60000
+rect 36726 59200 36782 60000
+rect 48318 59200 48374 60000
+rect 59910 59200 59966 60000
+rect 18 0 74 800
+rect 11610 0 11666 800
+rect 23202 0 23258 800
+rect 34794 0 34850 800
+rect 47030 0 47086 800
+rect 58622 0 58678 800
+<< obsm2 >>
+rect 20 59144 1250 59200
+rect 1418 59144 12842 59200
+rect 13010 59144 25078 59200
+rect 25246 59144 36670 59200
+rect 36838 59144 48262 59200
+rect 48430 59144 59854 59200
+rect 20 856 59964 59144
+rect 130 800 11554 856
+rect 11722 800 23146 856
+rect 23314 800 34738 856
+rect 34906 800 46974 856
+rect 47142 800 58566 856
+rect 58734 800 59964 856
+<< metal3 >>
+rect 0 49648 800 49768
+rect 59200 47608 60000 47728
+rect 0 36728 800 36848
+rect 59200 35368 60000 35488
+rect 0 24488 800 24608
+rect 59200 23128 60000 23248
+rect 0 12248 800 12368
+rect 59200 10208 60000 10328
+<< obsm3 >>
+rect 800 49848 59200 57697
+rect 880 49568 59200 49848
+rect 800 47808 59200 49568
+rect 800 47528 59120 47808
+rect 800 36928 59200 47528
+rect 880 36648 59200 36928
+rect 800 35568 59200 36648
+rect 800 35288 59120 35568
+rect 800 24688 59200 35288
+rect 880 24408 59200 24688
+rect 800 23328 59200 24408
+rect 800 23048 59120 23328
+rect 800 12448 59200 23048
+rect 880 12168 59200 12448
+rect 800 10408 59200 12168
+rect 800 10128 59120 10408
+rect 800 2143 59200 10128
+<< metal4 >>
+rect 4208 2128 4528 57712
+rect 4868 2128 5188 57712
+rect 34928 2128 35248 57712
+rect 35588 2128 35908 57712
+<< obsm4 >>
+rect 26003 10235 26069 34645
+<< metal5 >>
+rect 1056 36642 58928 36962
+rect 1056 35982 58928 36302
+rect 1056 6006 58928 6326
+rect 1056 5346 58928 5666
+<< labels >>
+rlabel metal4 s 4868 2128 5188 57712 6 VGND
+port 1 nsew ground bidirectional
+rlabel metal4 s 35588 2128 35908 57712 6 VGND
+port 1 nsew ground bidirectional
+rlabel metal5 s 1056 6006 58928 6326 6 VGND
+port 1 nsew ground bidirectional
+rlabel metal5 s 1056 36642 58928 36962 6 VGND
+port 1 nsew ground bidirectional
+rlabel metal4 s 4208 2128 4528 57712 6 VPWR
+port 2 nsew power bidirectional
+rlabel metal4 s 34928 2128 35248 57712 6 VPWR
+port 2 nsew power bidirectional
+rlabel metal5 s 1056 5346 58928 5666 6 VPWR
+port 2 nsew power bidirectional
+rlabel metal5 s 1056 35982 58928 36302 6 VPWR
+port 2 nsew power bidirectional
+rlabel metal3 s 59200 10208 60000 10328 6 clk
+port 3 nsew signal input
+rlabel metal2 s 59910 59200 59966 60000 6 current_pc[0]
+port 4 nsew signal output
+rlabel metal2 s 36726 59200 36782 60000 6 current_pc[10]
+port 5 nsew signal output
+rlabel metal2 s 23202 0 23258 800 6 current_pc[11]
+port 6 nsew signal output
+rlabel metal3 s 59200 47608 60000 47728 6 current_pc[12]
+port 7 nsew signal output
+rlabel metal2 s 58622 0 58678 800 6 current_pc[13]
+port 8 nsew signal output
+rlabel metal3 s 0 49648 800 49768 6 current_pc[14]
+port 9 nsew signal output
+rlabel metal2 s 25134 59200 25190 60000 6 current_pc[15]
+port 10 nsew signal output
+rlabel metal2 s 18 0 74 800 6 current_pc[1]
+port 11 nsew signal output
+rlabel metal2 s 12898 59200 12954 60000 6 current_pc[2]
+port 12 nsew signal output
+rlabel metal2 s 47030 0 47086 800 6 current_pc[3]
+port 13 nsew signal output
+rlabel metal2 s 11610 0 11666 800 6 current_pc[4]
+port 14 nsew signal output
+rlabel metal3 s 0 12248 800 12368 6 current_pc[5]
+port 15 nsew signal output
+rlabel metal3 s 59200 35368 60000 35488 6 current_pc[6]
+port 16 nsew signal output
+rlabel metal3 s 0 24488 800 24608 6 current_pc[7]
+port 17 nsew signal output
+rlabel metal2 s 48318 59200 48374 60000 6 current_pc[8]
+port 18 nsew signal output
+rlabel metal2 s 34794 0 34850 800 6 current_pc[9]
+port 19 nsew signal output
+rlabel metal3 s 0 36728 800 36848 6 is_sleeping
+port 20 nsew signal output
+rlabel metal2 s 1306 59200 1362 60000 6 rst_n
+port 21 nsew signal input
+rlabel metal3 s 59200 23128 60000 23248 6 wake_up
+port 22 nsew signal input
+<< properties >>
+string FIXED_BBOX 0 0 60000 60000
+string LEFclass BLOCK
+string LEFview TRUE
+string GDS_END 1484124
+string GDS_FILE /home/sandeep/low_power_iot/runs/RUN_2026.03.24_04.16.56/results/signoff/iot_core_top.magic.gds
+string GDS_START 302170
+<< end >>
+

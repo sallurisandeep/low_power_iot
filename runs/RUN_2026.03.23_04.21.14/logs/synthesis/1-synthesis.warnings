@@ -1,0 +1,71 @@
+Warning: Replacing memory \registers with list of registers. See /home/sandeep/low_power_iot/rtl/register_file.v:33
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+Warning: Wire instruction_decoder.\src_reg [3] is used but has no driver.
+Warning: Wire instruction_decoder.\src_reg [2] is used but has no driver.
+Warning: Wire instruction_decoder.\src_reg [1] is used but has no driver.
+Warning: Wire instruction_decoder.\src_reg [0] is used but has no driver.
+Warning: Wire instruction_decoder.\sleep_en is used but has no driver.
+Warning: Wire instruction_decoder.\opcode [3] is used but has no driver.
+Warning: Wire instruction_decoder.\opcode [2] is used but has no driver.
+Warning: Wire instruction_decoder.\opcode [1] is used but has no driver.
+Warning: Wire instruction_decoder.\opcode [0] is used but has no driver.
+Warning: Wire instruction_decoder.\mem_write is used but has no driver.
+Warning: Wire instruction_decoder.\dest_reg [3] is used but has no driver.
+Warning: Wire instruction_decoder.\dest_reg [2] is used but has no driver.
+Warning: Wire instruction_decoder.\dest_reg [1] is used but has no driver.
+Warning: Wire instruction_decoder.\dest_reg [0] is used but has no driver.
+Warning: Wire instruction_decoder.\alu_en is used but has no driver.
+Warning: Wire instruction_memory.\instruction [15] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [14] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [13] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [12] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [11] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [10] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [9] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [8] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [7] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [6] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [5] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [4] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [3] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [2] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [1] is used but has no driver.
+Warning: Wire instruction_memory.\instruction [0] is used but has no driver.
+Warning: Wire iot_core_top.\active_sleep is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6149 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6147 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6145 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6143 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6141 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6139 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6137 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6135 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6133 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6131 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6129 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6127 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6125 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6123 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6121 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6119 is used but has no driver.
+Warning: Wire iot_core_top.$auto$hilomap.cc:47:hilomap_worker$6117 is used but has no driver.
+Warning: Wire program_counter.\pc_out [15] is used but has no driver.
+Warning: Wire program_counter.\pc_out [14] is used but has no driver.
+Warning: Wire program_counter.\pc_out [13] is used but has no driver.
+Warning: Wire program_counter.\pc_out [12] is used but has no driver.
+Warning: Wire program_counter.\pc_out [11] is used but has no driver.
+Warning: Wire program_counter.\pc_out [10] is used but has no driver.
+Warning: Wire program_counter.\pc_out [9] is used but has no driver.
+Warning: Wire program_counter.\pc_out [8] is used but has no driver.
+Warning: Wire program_counter.\pc_out [7] is used but has no driver.
+Warning: Wire program_counter.\pc_out [6] is used but has no driver.
+Warning: Wire program_counter.\pc_out [5] is used but has no driver.
+Warning: Wire program_counter.\pc_out [4] is used but has no driver.
+Warning: Wire program_counter.\pc_out [3] is used but has no driver.
+Warning: Wire program_counter.\pc_out [2] is used but has no driver.
+Warning: Wire program_counter.\pc_out [1] is used but has no driver.
+Warning: Wire program_counter.\pc_out [0] is used but has no driver.
+Warnings: 66 unique messages, 66 total

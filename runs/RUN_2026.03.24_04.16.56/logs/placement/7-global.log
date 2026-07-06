@@ -1,0 +1,125 @@
+OpenROAD 41a51eaf4ca2171c92ff38afb91eb37bbd3f36da 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/home/sandeep/low_power_iot/runs/RUN_2026.03.24_04.16.56/results/floorplan/iot_core_top.odb'…
+define_corners Typical
+read_liberty -corner Typical /home/sandeep/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/home/sandeep/low_power_iot/runs/RUN_2026.03.24_04.16.56/tmp/floorplan/3-initial_fp.sdc'…
+[INFO]: Setting RC values...
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met3. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 5520 10880
+[INFO GPL-0005] CoreAreaUxUy: 294400 288320
+[INFO GPL-0006] NumInstances: 1494
+[INFO GPL-0007] NumPlaceInstances: 146
+[INFO GPL-0008] NumFixedInstances: 1348
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 149
+[INFO GPL-0011] NumPins: 495
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 300000 300000
+[INFO GPL-0014] CoreAreaLxLy: 5520 10880
+[INFO GPL-0015] CoreAreaUxUy: 294400 288320
+[INFO GPL-0016] CoreArea: 80146867200
+[INFO GPL-0017] NonPlaceInstsArea: 2197107200
+[INFO GPL-0018] PlaceInstsArea: 1346291200
+[INFO GPL-0019] Util(%): 1.73
+[INFO GPL-0020] StdInstsArea: 1346291200
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00000011 HPWL: 7067620
+[InitialPlace]  Iter: 2 CG residual: 0.00000008 HPWL: 5696414
+[InitialPlace]  Iter: 3 CG residual: 0.00000006 HPWL: 5677212
+[InitialPlace]  Iter: 4 CG residual: 0.00000006 HPWL: 5677561
+[InitialPlace]  Iter: 5 CG residual: 0.00000011 HPWL: 5677668
+[INFO GPL-0031] FillerInit: NumGCells: 3668
+[INFO GPL-0032] FillerInit: NumGNets: 149
+[INFO GPL-0033] FillerInit: NumGPins: 495
+[INFO GPL-0023] TargetDensity: 0.40
+[INFO GPL-0024] AveragePlaceInstArea: 9221172
+[INFO GPL-0025] IdealBinArea: 23052930
+[INFO GPL-0026] IdealBinCnt: 3476
+[INFO GPL-0027] TotalBinArea: 80146867200
+[INFO GPL-0028] BinCnt: 32 32
+[INFO GPL-0029] BinSize: 9028 8670
+[INFO GPL-0030] NumBins: 1024
+[NesterovSolve] Iter: 1 overflow: 0.793804 HPWL: 4856349
+[INFO GPL-0100] worst slack 6.18e-09
+[INFO GPL-0103] Weighted 12 nets.
+[INFO GPL-0100] worst slack 6.17e-09
+[INFO GPL-0103] Weighted 11 nets.
+[NesterovSolve] Snapshot saved at iter = 5
+[INFO GPL-0100] worst slack 6.16e-09
+[INFO GPL-0103] Weighted 12 nets.
+[NesterovSolve] Iter: 10 overflow: 0.453235 HPWL: 5485792
+[NesterovSolve] Iter: 20 overflow: 0.504595 HPWL: 5334529
+[NesterovSolve] Iter: 30 overflow: 0.478829 HPWL: 5364067
+[NesterovSolve] Iter: 40 overflow: 0.494528 HPWL: 5304849
+[NesterovSolve] Iter: 50 overflow: 0.483557 HPWL: 5357193
+[NesterovSolve] Iter: 60 overflow: 0.496003 HPWL: 5324198
+[NesterovSolve] Iter: 70 overflow: 0.484496 HPWL: 5325763
+[NesterovSolve] Iter: 80 overflow: 0.495152 HPWL: 5337602
+[NesterovSolve] Iter: 90 overflow: 0.47504 HPWL: 5343163
+[NesterovSolve] Iter: 100 overflow: 0.495431 HPWL: 5310252
+[NesterovSolve] Iter: 110 overflow: 0.462632 HPWL: 5355298
+[NesterovSolve] Iter: 120 overflow: 0.50026 HPWL: 5360583
+[NesterovSolve] Iter: 130 overflow: 0.452919 HPWL: 5360605
+[NesterovSolve] Iter: 140 overflow: 0.489514 HPWL: 5377265
+[NesterovSolve] Iter: 150 overflow: 0.478399 HPWL: 5334581
+[NesterovSolve] Iter: 160 overflow: 0.471723 HPWL: 5389429
+[NesterovSolve] Iter: 170 overflow: 0.480881 HPWL: 5346124
+[NesterovSolve] Iter: 180 overflow: 0.475936 HPWL: 5396969
+[NesterovSolve] Iter: 190 overflow: 0.491834 HPWL: 5330878
+[NesterovSolve] Iter: 200 overflow: 0.442048 HPWL: 5394642
+[NesterovSolve] Iter: 210 overflow: 0.484533 HPWL: 5371879
+[NesterovSolve] Iter: 220 overflow: 0.428441 HPWL: 5421964
+[NesterovSolve] Iter: 230 overflow: 0.431043 HPWL: 5389670
+[NesterovSolve] Iter: 240 overflow: 0.406763 HPWL: 5390191
+[NesterovSolve] Iter: 250 overflow: 0.350288 HPWL: 5403039
+[NesterovSolve] Iter: 260 overflow: 0.362904 HPWL: 5362222
+[INFO GPL-0100] worst slack 6.29e-09
+[INFO GPL-0103] Weighted 10 nets.
+[NesterovSolve] Iter: 270 overflow: 0.278687 HPWL: 5454260
+[NesterovSolve] Iter: 280 overflow: 0.273956 HPWL: 5442713
+[NesterovSolve] Iter: 290 overflow: 0.240353 HPWL: 5439088
+[INFO GPL-0100] worst slack 6.25e-09
+[INFO GPL-0103] Weighted 12 nets.
+[NesterovSolve] Iter: 300 overflow: 0.198997 HPWL: 5475871
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileLxLy: 0 0
+[INFO GPL-0037] TileSize: 6900 6900
+[INFO GPL-0038] TileCnt: 43 43
+[INFO GPL-0039] numRoutingLayers: 6
+[INFO GPL-0040] NumTiles: 1849
+[INFO GPL-0063] TotalRouteOverflowH2: 0.0
+[INFO GPL-0064] TotalRouteOverflowV2: 0.0
+[INFO GPL-0065] OverflowTileCnt2: 0
+[INFO GPL-0066] 0.5%RC: 0.813461537544544
+[INFO GPL-0067] 1.0%RC: 0.7259615315840795
+[INFO GPL-0068] 2.0%RC: 0.6629807777129687
+[INFO GPL-0069] 5.0%RC: 0.603076935502199
+[INFO GPL-0070] 0.5rcK: 1.0
+[INFO GPL-0071] 1.0rcK: 1.0
+[INFO GPL-0072] 2.0rcK: 0.0
+[INFO GPL-0073] 5.0rcK: 0.0
+[INFO GPL-0074] FinalRC: 0.76971155
+[NesterovSolve] Iter: 310 overflow: 0.182656 HPWL: 5484559
+[NesterovSolve] Iter: 320 overflow: 0.155494 HPWL: 5514058
+[INFO GPL-0100] worst slack 6.28e-09
+[INFO GPL-0103] Weighted 10 nets.
+[NesterovSolve] Iter: 330 overflow: 0.13121 HPWL: 5537137
+[NesterovSolve] Iter: 340 overflow: 0.105749 HPWL: 5556237
+[NesterovSolve] Finished with Overflow: 0.099210
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/home/sandeep/low_power_iot/runs/RUN_2026.03.24_04.16.56/tmp/placement/7-global.odb'…
+Writing netlist to '/home/sandeep/low_power_iot/runs/RUN_2026.03.24_04.16.56/tmp/placement/7-global.nl.v'…
+Writing powered netlist to '/home/sandeep/low_power_iot/runs/RUN_2026.03.24_04.16.56/tmp/placement/7-global.pnl.v'…
+Writing layout to '/home/sandeep/low_power_iot/runs/RUN_2026.03.24_04.16.56/tmp/placement/7-global.def'…

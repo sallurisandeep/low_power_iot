@@ -1,0 +1,36 @@
+%Warning-EOFNEWLINE: /home/sandeep/low_power_iot/rtl/alu.v:42:10: Missing newline at end of file (POSIX 3.206).
+                                                                : ... Suggest add newline.
+   42 | endmodule
+      |          ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.009
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: /home/sandeep/low_power_iot/rtl/clock_gating_unit.v:23:10: Missing newline at end of file (POSIX 3.206).
+                                                                              : ... Suggest add newline.
+   23 | endmodule
+      |          ^
+%Warning-EOFNEWLINE: /home/sandeep/low_power_iot/rtl/instruction_decoder.v:52:10: Missing newline at end of file (POSIX 3.206).
+                                                                                : ... Suggest add newline.
+   52 | endmodule
+      |          ^
+%Warning-EOFNEWLINE: /home/sandeep/low_power_iot/rtl/instruction_memory.v:21:10: Missing newline at end of file (POSIX 3.206).
+                                                                               : ... Suggest add newline.
+   21 | endmodule
+      |          ^
+%Error: Cannot find file containing module: /home/sandeep/low_power_iot/rtl/program_counter.v
+%Error: This may be because there's no search path specified with -I<dir>.
+        ... Looked in:
+             /home/sandeep/low_power_iot/rtl/program_counter.v
+             /home/sandeep/low_power_iot/rtl/program_counter.v.v
+             /home/sandeep/low_power_iot/rtl/program_counter.v.sv
+             obj_dir//home/sandeep/low_power_iot/rtl/program_counter.v
+             obj_dir//home/sandeep/low_power_iot/rtl/program_counter.v.v
+             obj_dir//home/sandeep/low_power_iot/rtl/program_counter.v.sv
+%Warning-EOFNEWLINE: /home/sandeep/low_power_iot/rtl/register_file.v:41:10: Missing newline at end of file (POSIX 3.206).
+                                                                          : ... Suggest add newline.
+   41 | endmodule
+      |          ^
+%Warning-EOFNEWLINE: /home/sandeep/low_power_iot/rtl/iot_core_top.v:74:10: Missing newline at end of file (POSIX 3.206).
+                                                                         : ... Suggest add newline.
+   74 | endmodule
+      |          ^
+%Error: Exiting due to 2 error(s)

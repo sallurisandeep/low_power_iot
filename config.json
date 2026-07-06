@@ -1,0 +1,19 @@
+{
+    "DESIGN_NAME": "iot_core_top",
+    "VERILOG_FILES": [
+        "dir::rtl/alu.v",
+        "dir::rtl/clock_gating_unit.v",
+        "dir::rtl/instruction_decoder.v",
+        "dir::rtl/instruction_memory.v",
+        "dir::rtl/program_counter.v",
+        "dir::rtl/register_file.v",
+        "dir::rtl/iot_core_top.v"
+    ],
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 10.0,
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 300 300",
+    "PL_TARGET_DENSITY": 0.40,
+    "SYNTH_NO_FLAT": 1,
+    "DIODE_INSERTION_STRATEGY": 3
+}

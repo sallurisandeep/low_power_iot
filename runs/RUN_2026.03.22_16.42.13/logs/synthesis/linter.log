@@ -1,0 +1,26 @@
+%Warning-EOFNEWLINE: /home/sandeep/low_power_iot/rtl/program_counter.v:25:10: Missing newline at end of file (POSIX 3.206).
+                                                                            : ... Suggest add newline.
+   25 | endmodule
+      |          ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.009
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: /home/sandeep/low_power_iot/rtl/register_file.v:41:10: Missing newline at end of file (POSIX 3.206).
+                                                                          : ... Suggest add newline.
+   41 | endmodule
+      |          ^
+%Warning-UNUSEDSIGNAL: /home/sandeep/low_power_iot/rtl/iot_core_top.v:21:17: Signal is not used: 'alu_zero'
+                                                                           : ... In instance iot_core_top
+   21 |     wire        alu_zero;
+      |                 ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/sandeep/low_power_iot/rtl/iot_core_top.v:23:10: Signal is not used: 'clk_alu'
+                                                                           : ... In instance iot_core_top
+   23 |     wire clk_alu, clk_reg;
+      |          ^~~~~~~
+%Warning-UNUSEDSIGNAL: /home/sandeep/low_power_iot/rtl/instruction_decoder.v:5:24: Bits of signal are not used: 'instruction'[3:0]
+                                                                                 : ... In instance iot_core_top.u_decoder
+    5 |     input  wire [15:0] instruction,  
+      |                        ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/sandeep/low_power_iot/rtl/instruction_memory.v:3:24: Bits of signal are not used: 'pc_addr'[15:8]
+                                                                                : ... In instance iot_core_top.u_imem
+    3 |     input  wire [15:0] pc_addr,      
+      |                        ^~~~~~~

@@ -1,0 +1,280 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Typical Corner ===================================
+
+Startpoint: rst_n (input port clocked by clk)
+Endpoint: u_pc._177_ (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.15    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.41    0.30    2.30 ^ rst_n (in)
+    16    0.09                           rst_n (net)
+                  0.41    0.00    2.30 ^ u_pc._177_/RESET_B (sky130_fd_sc_hd__dfrtp_2)
+                                  2.30   data arrival time
+
+                  0.15   10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                                  9.75 ^ u_pc._177_/CLK (sky130_fd_sc_hd__dfrtp_2)
+                          0.14    9.89   library recovery time
+                                  9.89   data required time
+-----------------------------------------------------------------------------
+                                  9.89   data required time
+                                 -2.30   data arrival time
+-----------------------------------------------------------------------------
+                                  7.59   slack (MET)
+
+
+Startpoint: u_pc._168_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: is_sleeping (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.15    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.15    0.00    0.00 ^ u_pc._168_/CLK (sky130_fd_sc_hd__dfrtp_2)
+                  0.11    0.53    0.53 v u_pc._168_/Q (sky130_fd_sc_hd__dfrtp_2)
+    12    0.03                           u_imem.pc_addr[0] (net)
+                  0.11    0.00    0.53 v u_imem._12_/A (sky130_fd_sc_hd__or3b_2)
+                  0.08    0.51    1.04 v u_imem._12_/X (sky130_fd_sc_hd__or3b_2)
+     1    0.00                           u_imem._02_ (net)
+                  0.08    0.00    1.04 v u_imem._13_/C (sky130_fd_sc_hd__nand3_2)
+                  0.05    0.08    1.12 ^ u_imem._13_/Y (sky130_fd_sc_hd__nand3_2)
+     1    0.00                           u_decoder.instruction[13] (net)
+                  0.05    0.00    1.12 ^ u_decoder._03_/A (sky130_fd_sc_hd__and4_2)
+                  0.05    0.20    1.32 ^ u_decoder._03_/X (sky130_fd_sc_hd__and4_2)
+     1    0.00                           u_decoder._01_ (net)
+                  0.05    0.00    1.32 ^ u_decoder._04_/A (sky130_fd_sc_hd__buf_1)
+                  0.51    0.42    1.75 ^ u_decoder._04_/X (sky130_fd_sc_hd__buf_1)
+     2    0.04                           is_sleeping (net)
+                  0.51    0.00    1.75 ^ is_sleeping (out)
+                                  1.75   data arrival time
+
+                  0.15   10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -1.75   data arrival time
+-----------------------------------------------------------------------------
+                                  6.00   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Typical Corner ===================================
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+rst_n                                    10     16     -6 (VIOLATED)
+u_pc._168_/Q                             10     12     -2 (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 166 unannotated drivers.
+ clk
+ rst_n
+ wake_up
+ _18_/X
+ _19_/X
+ _20_/HI
+ _20_/LO
+ _21_/HI
+ _21_/LO
+ _22_/HI
+ _22_/LO
+ _23_/HI
+ _23_/LO
+ _24_/HI
+ _24_/LO
+ _25_/HI
+ _25_/LO
+ _26_/HI
+ _26_/LO
+ _27_/HI
+ _27_/LO
+ _28_/HI
+ _28_/LO
+ _29_/HI
+ _29_/LO
+ _30_/HI
+ _30_/LO
+ _31_/HI
+ _31_/LO
+ _32_/HI
+ _32_/LO
+ _33_/HI
+ _33_/LO
+ _34_/HI
+ _34_/LO
+ _35_/HI
+ _35_/LO
+ _36_/HI
+ _36_/LO
+ _37_/X
+ _38_/X
+ _39_/X
+ _40_/X
+ _41_/X
+ _42_/X
+ _43_/X
+ _44_/X
+ _45_/X
+ _46_/X
+ _47_/X
+ _48_/X
+ _49_/X
+ _50_/X
+ _51_/X
+ _52_/X
+ u_decoder._03_/X
+ u_decoder._04_/X
+ u_imem._05_/Y
+ u_imem._07_/Y
+ u_imem._08_/X
+ u_imem._10_/Y
+ u_imem._12_/X
+ u_imem._13_/Y
+ u_imem._14_/X
+ u_imem._15_/X
+ u_imem._16_/X
+ u_pc._084_/X
+ u_pc._085_/X
+ u_pc._086_/X
+ u_pc._087_/Y
+ u_pc._088_/X
+ u_pc._089_/X
+ u_pc._090_/Y
+ u_pc._091_/X
+ u_pc._092_/X
+ u_pc._093_/Y
+ u_pc._094_/X
+ u_pc._095_/X
+ u_pc._096_/X
+ u_pc._097_/Y
+ u_pc._098_/X
+ u_pc._099_/X
+ u_pc._100_/X
+ u_pc._101_/Y
+ u_pc._102_/X
+ u_pc._103_/X
+ u_pc._104_/Y
+ u_pc._105_/Y
+ u_pc._106_/X
+ u_pc._107_/X
+ u_pc._108_/X
+ u_pc._109_/Y
+ u_pc._110_/X
+ u_pc._111_/X
+ u_pc._112_/Y
+ u_pc._113_/X
+ u_pc._114_/Y
+ u_pc._115_/X
+ u_pc._116_/X
+ u_pc._117_/Y
+ u_pc._118_/X
+ u_pc._119_/X
+ u_pc._120_/X
+ u_pc._121_/X
+ u_pc._122_/X
+ u_pc._123_/X
+ u_pc._124_/X
+ u_pc._125_/X
+ u_pc._126_/Y
+ u_pc._127_/X
+ u_pc._128_/X
+ u_pc._129_/Y
+ u_pc._130_/X
+ u_pc._131_/X
+ u_pc._132_/X
+ u_pc._133_/X
+ u_pc._134_/X
+ u_pc._135_/Y
+ u_pc._136_/Y
+ u_pc._137_/Y
+ u_pc._138_/Y
+ u_pc._139_/X
+ u_pc._140_/X
+ u_pc._141_/X
+ u_pc._142_/X
+ u_pc._143_/X
+ u_pc._144_/X
+ u_pc._145_/Y
+ u_pc._146_/X
+ u_pc._147_/Y
+ u_pc._148_/Y
+ u_pc._149_/Y
+ u_pc._150_/X
+ u_pc._151_/X
+ u_pc._152_/X
+ u_pc._153_/X
+ u_pc._154_/X
+ u_pc._155_/X
+ u_pc._156_/Y
+ u_pc._157_/X
+ u_pc._158_/Y
+ u_pc._159_/X
+ u_pc._160_/X
+ u_pc._161_/X
+ u_pc._162_/X
+ u_pc._163_/X
+ u_pc._164_/Y
+ u_pc._165_/X
+ u_pc._166_/Y
+ u_pc._167_/Y
+ u_pc._168_/Q
+ u_pc._169_/Q
+ u_pc._170_/Q
+ u_pc._171_/Q
+ u_pc._172_/Q
+ u_pc._173_/Q
+ u_pc._174_/Q
+ u_pc._175_/Q
+ u_pc._176_/Q
+ u_pc._177_/Q
+ u_pc._178_/Q
+ u_pc._179_/Q
+ u_pc._180_/Q
+ u_pc._181_/Q
+ u_pc._182_/Q
+ u_pc._183_/Q
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 2
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
