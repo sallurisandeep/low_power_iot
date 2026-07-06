@@ -1,3 +1,4 @@
+
 // File: rtl/clock_gating_unit.v
 // Description: Glitch-free Integrated Clock Gating (ICG) Cell
 
